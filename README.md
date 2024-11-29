@@ -10,8 +10,8 @@ when you open the website it starts with an introduction page of our idea and mo
 
 1.Clone this repository: bash
 
-git clone 
+git clone https://github.com/RIYAKUMARI001/Nature-Nexus.git
 
 2.Open the index.html file in your browser.
 
-LIVE demo - 
+LIVE demo - https://riyakumari001.github.io/Nature-Nexus/
