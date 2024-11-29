@@ -3,88 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-   <link rel="stylesheet" href="styles.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <title>TINRYC</title>
+    <link rel = "stylesheet" href="style.css">
 </head>
-<body> 
-    
+<body>
     <div class="container">
-       <div class="form-box login">
-        <h2>Login</h2>
-        <form action = "#">
-        <div class="input-group">
-            <span class="icon">
-                <i class="fa-solid fa-envelope"></i>
-            </span>
-           
-            <input type="email" id="email" name="email" required>
-            <label  for="email">Email:</label>
-
+    <header class="header">
+        <div class="project-name">TINRYC</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button class="search-button"><i class="fas fa-search"></i></button>
         </div>
-        <div class="input-group">
-            <span class="icon">
-                <i class="fa-solid fa-lock"></i>
-            </span>
-            
-            <input type="password" id="password" name="password" required>
-            <label for="password">Password:</label>
-       </div>
-       <div class="remembered-password">
-        <label > <input type="checkbox"> Remember me</label>
-       
-       <a href="#" class="forgot-password">Forgot Password?</a>
-          </div>
-          <button type="submit" class="btn">Login</button>  
-          <div class="login-register">
-          <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
-          </div>
-        </form>
-    </div>
-
-
-
-
-
-
-    <div class="form-box register">
-        <h2>Register</h2>
-        <form action = "#">
-        <div class="input-group">
-            <span class="icon">
-                <i class="fa-solid fa-user"></i>
-            </span>
-            <input type="text" id="Username" name="Username" required>
-            <label for="Username">Username:</label>
-
-        </div>
-        <div class="input-group">
-            <span class="icon">
-                <i class="fa-solid fa-envelope"></i>
-            </span>
-           
-            <input type="email" id="email" name="email" required>
-            <label  for="email">Email:</label>
-
-        </div>
-        <div class="input-group">
-            <span class="icon">
-                <i class="fa-solid fa-lock"></i>
-            </span>
-            
-            <input type="password" id="password" name="password" required>
-            <label for="password">Password:</label>
-       </div>
-       <div class="remembered-password">
-        <label > <input type="checkbox">I agree to the Terms & Conditions</label>
-          </div>
-          <button type="submit" class="btn">Register</button>  
-          <div class="login-register">
-          <p>Already have an account?<a href="#" class="login-link">Login</a></p>
-          </div>
-        </form>
-    </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+        <nav>
+            <ul>
+                <li><a href="login.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <div class="main-content">
+            <div class="content">
+            <h1>Welcome to TINRYC</h1>
+            <h2>Simplify Your Recycling , Save the Planet.</h2>
+            <p>With just a few clicks, schedule a hassle-free pickup for your soda cans and plastic waste. Our team will collect and recycle them responsibly.</p>
+            </div>
+             </div> 
+        <div class="footer">
+            <p>© 2023 TINRYC. All Rights Reserved.</p>
+        
+    </div><!--3-->
+    
+     </div>
+    
+    </body>
+    </html>
+    
