@@ -1,11 +1,11 @@
-const container = document.querySelectorAll('.container');
-const loginLink = document.querySelector('.login-link');
+const container = document.querySelector('.container');
 const registerLink = document.querySelector('.register-link');
+const loginLink = document.querySelector('.login-link');
 
 registerLink.addEventListener('click', () => {
-    container.classList.add('active');
+    container.classList.add('show-register');
 });
 
 loginLink.addEventListener('click', () => {
-    container.classList.remove('active');
+    container.classList.remove('show-register');
 });

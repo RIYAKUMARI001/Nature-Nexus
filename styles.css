@@ -12,7 +12,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-.container{
+.container {
     position: relative;
     width: 400px;
     height: 440px;
@@ -23,8 +23,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: height .2s ease;
-    overflow: hidden;
+    transition: height 0.4s ease,transform 0.4s ease;
+     overflow : hidden; 
      
 }
 .container .form-box {
@@ -32,28 +32,45 @@ width: 100%;
 padding: 40px;
 
 }
-.container.active {
-    height:520px ;
-}
-.container .form-box.login {
-    transition: transform .18s ease;
-    transform: translateX(0);
-   
-}
-.container.active .form-box.login {
-    transition: none;
-    transform: translateX(-400px);
-}
-.container .form-box.register {
+.form-box {
     position: absolute;
-    transform: translateX(400px);
-    transition: none;
+    /* top: 0; */
+    /* min-height: 460px; */
+    width: 100%;
+    /* padding: 40px; */
+     transition: transform 0.4s ease-in-out; 
+    overflow: visible;
 }
-.container.active .form-box.register {
-    transform: translateX(0);
-    transition: transform .18s ease;
-   
+
+.form-box.login {
+    transform: translateY(0);
 }
+
+.form-box.register {
+    transform: translateY(100%);
+}
+
+.container.show-register .form-box.login {
+    transform: translateY(-100%);
+}
+
+.container.show-register .form-box.register {
+    transform: translateY(0);
+}
+
+.register-link,
+.login-link {
+    color: #3a82f4;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover,
+.login-link:hover {
+    color: #162938;
+}
+
 
 .form-box h2 {
     font-size : 2em;
@@ -144,12 +161,18 @@ font-weight: 500;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
+    /* line-height: 1.5; */
 }
-.login-register p a {
-    color: #162938;
+.login-register p {
+    margin : 0;
+}
+.login-register a {
+color: #3a82f4;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
 }
-.login-register p a:hover {
+.login-register a:hover {
     text-decoration: underline;
 }
+
