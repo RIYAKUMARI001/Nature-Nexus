@@ -12,6 +12,20 @@ body {
     align-items: center;
     height: 100vh;
 }
+.home-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2em;
+    color: #162938;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.home-icon:hover {
+    color: #3a82f4;
+    transform: scale(1.1);
+}
 .container {
     position: relative;
     width: 400px;
@@ -175,4 +189,3 @@ color: #3a82f4;
 .login-register a:hover {
     text-decoration: underline;
 }
-
