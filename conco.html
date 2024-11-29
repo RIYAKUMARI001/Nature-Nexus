@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Friendly Shop</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 10px;
+      background: linear-gradient(to bottom, #e8f5e9, #c8e6c9); /* Light green gradient */
+    }
+    .shop-container {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      width: 100%;
+      border: 3px solid #4caf50; /* Green border */
+    }
+    .shop-container img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 2px solid #81c784; /* Light green border */
+    }
+    .shop-name {
+      font-size: 26px;
+      font-weight: bold;
+      color: #2e7d32; /* Dark green */
+      margin: 15px 0;
+    }
+    .tagline {
+      font-size: 18px;
+      font-style: italic;
+      color: #388e3c;
+      margin-bottom: 10px;
+    }
+    .contact-details {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #555;
+    }
+    .appointment-form {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .appointment-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .appointment-form input, .appointment-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 2px solid #4caf50;
+      border-radius: 5px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #388e3c;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #2e7d32;
+      font-weight: bold;
+      text-align: center;
+    }
+    .shop-container a{
+        color: green;
+    }
+    .shop-container p{
+        color:green;
+    }
+  </style>
+</head>
+<body>
+  <div class="shop-container">
+    <img src="https://th.bing.com/th/id/OIP.G2s3Ca53tkLfcC2k-QhCtwHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Shop Photo">
+    <div class="shop-name">Conco Recycling plant</div>
+    <div class="tagline">"Give Waste a Second Life!"</div>
+    <div class="contact-details">
+      <p>Contact: 7687688999</p>
+      <a href ="https://g.co/kgs/Ei8oTwL ">🌎Reach us</a>
+    </div>
+
+    <!-- Book Appointment Button -->
+    <button class="button" onclick="showForm()">Book Appointment</button>
+
+    <!-- Appointment Form -->
+    <form class="appointment-form" id="appointmentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="number">Phone Number:</label>
+      <input type="tel" id="number" placeholder="Enter your phone number" required>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+
+      <label for="pincode">Pincode:</label>
+      <input type="number" id="pincode" placeholder="Enter your pincode" required>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time-slot">Select Time Slot:</label>
+      <select id="time-slot" required>
+        <option value="" disabled selected>Select Time Slot</option>
+        <option value="1 to 2 PM">1 to 2 PM</option>
+        <option value="3 to 4 PM">3 to 4 PM</option>
+        <option value="5 to 6 PM">5 to 6 PM</option>
+      </select>
+
+      <button type="button" class="button" onclick="bookAppointment()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    // Function to show the appointment form
+    function showForm() {
+      document.getElementById('appointmentForm').style.display = 'block';
+    }
+
+    // Function to book the appointment
+    function bookAppointment() {
+      const name = document.getElementById('name').value;
+      const number = document.getElementById('number').value;
+      const address = document.getElementById('address').value;
+      const pincode = document.getElementById('pincode').value;
+      const date = document.getElementById('date').value;
+      const timeSlot = document.getElementById('time-slot').value;
+
+      if (!name || !number || !address || !pincode || !date || !timeSlot) {
+        alert("Please fill in all the details!");
+        return;
+      }
+
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerHTML = `
+        Appointment Booked Successfully!<br>
+        <strong>Name:</strong> ${name}<br>
+        <strong>Phone:</strong> ${number}<br>
+        <strong>Address:</strong> ${address}<br>
+        <strong>Pincode:</strong> ${pincode}<br>
+        <strong>Date:</strong> ${date}<br>
+        <strong>Time Slot:</strong> ${timeSlot}
+      `;
+    }
+  </script>
+</body>
+</html>
