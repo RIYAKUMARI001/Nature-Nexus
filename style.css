@@ -200,12 +200,7 @@ h1 {
     color: #333;
 }
 
-.price-tag {
-    font-size: 20px;
-    font-weight: bold;
-    color: #4caf50;
-    margin-bottom: 20px;
-}
+
 
 .grid-container {
     display: grid;
