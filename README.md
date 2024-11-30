@@ -6,6 +6,8 @@ A person's good charectar is sometimes misused , why cant we misuse people's bad
 
 when you open the website it starts with an introduction page of our idea and motive, then it moves to application page where we have to fill our details, then it will proceed through a web page which has list of all the shops in which we have created a lot of features like: --high to low button and low to high button which will arrange the shops average prices respectively. --we have also provided a facility where you can enter number of cans and amount will be set accordingly will give you total amount. when you click on particular shop you will find further details like booking delivery time(when you want the delivery person to come) and location of the shop and further contact details.
 
+
+Technology used: HTML , CSS,JAVASCRIPT .
 🔧 How to Run
 
 1.Clone this repository: bash
